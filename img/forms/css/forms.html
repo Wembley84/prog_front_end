@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fale conosco</title>
+</head>
+<body>
+
+	<h2>Fale conosco</h2>
+
+	<form>
+		<label for="Primeiro nome"> Primeiro nome:</label>
+		<input type="text" id="nome" name="nome"><br><br>
+
+		<label for="nome">útimo nome:</label>
+		<input type=" nome" id= "nome" name="nome"><br><br>
+
+		
+
+		<input type="submit" value="Enviar" onclick="enviarFormulario()">
+	</form>
+
+	<script>
+		function enviarFormulario() {
+			// Captura os valores dos campos do formulário
+			var nome = document.getElementById("nome").value;
+			var email = document.getElementById("email").value;
+			var mensagem = document.getElementById("mensagem").value;
+
+			// Imprime os valores dos campos no console
+			console.log("Nome: " + nome);
+			console.log("Email: " + email);
+			console.log("Mensagem: " + mensagem);
+
+			// Aqui você pode inserir código para enviar os dados do formulário para um servidor
+			// ou realizar outras ações, como exibir uma mensagem de sucesso na página.
+		}
+	</script>
+
+</body>
+</html>
