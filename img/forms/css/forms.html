@@ -1,40 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fale conosco</title>
+	<link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body> <div class="container">
+	<header>
+        <h1>Fale Conosco</h1>
 
-	<h2>Fale conosco</h2>
+      </header>
+      <form action="">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Primeiro nome</label>
+          </div>
 
-	<form>
-		<label for="Primeiro nome"> Primeiro nome:</label>
-		<input type="text" id="nome" name="nome"><br><br>
+          <div class="col-75">
+            <input type="text" name="firstname" id="fname" required placeholder="Seu nome..." class="campo"/>
+          </div>
 
-		<label for="nome">útimo nome:</label>
-		<input type=" nome" id= "nome" name="nome"><br><br>
 
-		
+        <div class="row"> 
+          <div class="col-25">
+            <label for="lname">Último nome</label>
+          </div>
 
-		<input type="submit" value="Enviar" onclick="enviarFormulario()">
-	</form>
+          <div class="col-75">
+            <input type="text" name="lastname" id="lname" required="true" placeholder="Seu sobrenome..." class="campo"/>
+          </div>
+        </div>
 
-	<script>
-		function enviarFormulario() {
-			// Captura os valores dos campos do formulário
-			var nome = document.getElementById("nome").value;
-			var email = document.getElementById("email").value;
-			var mensagem = document.getElementById("mensagem").value;
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
 
-			// Imprime os valores dos campos no console
-			console.log("Nome: " + nome);
-			console.log("Email: " + email);
-			console.log("Mensagem: " + mensagem);
+          <div class="col-75">
+            <input type="email" name="email" id="email" required="true" placeholder="Seu email..." class="campo"/>
+          </div>
+        </div>
 
-			// Aqui você pode inserir código para enviar os dados do formulário para um servidor
-			// ou realizar outras ações, como exibir uma mensagem de sucesso na página.
-		}
-	</script>
+        <div class="row">
+          <div class="col-25">
+            <label for="pais">País</label>
+          </div>
+
+          <div class="col-75">
+            <select name="pais" id="pais" class="campo">
+              <option value="">Brasil</option>
+              <option value="">USA</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="assunto">Assunto</label>
+          </div>
+
+          <div class="col-75">
+            <textarea name="assunto" id="assunto" cols="5" rows="5" placeholder="Escreva aqui..." class="campo"></textarea>
+          </div>
+        </div>
+
+        <br>
+          <div class="row">
+            <input class="button" type="submit" value="Enviar" class="campo">
+          </div>
+
+      </form>
+    </div>
+
+    <center><p>Em caso de dúvidas, entre em contato pelo telefone: 
+        <a href=""id="duvidas">(35) 3622-8400</a></p></center>
+
+
 
 </body>
 </html>

@@ -1,46 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Formulário Simples</title>
-</head>
-<body>
+*{
+    box-sizing: border-box;
+}
 
-	<h2>Formulário Simples</h2>
+.container{
+    background-color: #b0e0e27e;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 8px;
+}
+#enviar{
+    background-color: dodgerblue;
+    border-radius: 15px;
+}
 
-	<form>
-		<label for="nome">Nome:</label>
-		<input type="text" id="nome" name="nome"><br><br>
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
 
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email"><br><br>
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
 
-		<label for="mensagem">Mensagem:</label>
-		<textarea id="mensagem" name="mensagem"></textarea><br><br>
+.col-75 input{
+    width: 100%;
+    height: 35px;
+}
 
-		<input type="submit" value="Enviar" onclick="enviarFormulario()">
-	</form>
+.col-75  textarea{
+    width: 100%;
+    height: 35px;
+}
 
-	<script>
-		function enviarFormulario() {
-			// Captura os valores dos campos do formulário
-			var nome = document.getElementById("nome").value;
-			var email = document.getElementById("email").value;
-			var mensagem = document.getElementById("mensagem").value;
+.col-75 select{
+    width: 100%;
+    height: 35px;
+}
 
-			// Imprime os valores dos campos no console
-			console.log("Nome: " + nome);
-			console.log("Email: " + email);
-			console.log("Mensagem: " + mensagem);
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
-			// Aqui você pode inserir código para enviar os dados do formulário para um servidor
-			// ou realizar outras ações, como exibir uma mensagem de sucesso na página.
-		}
-	</script>
+.row .button{
+    background-color: rgb(0, 30, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    float: right;
+}
 
-</body>
-</html>
-
-
-
-
-
+.campo{
+    border-radius: 5px;
+    border: 1px solid rgb(198, 198, 198);
+}
+#duvidas{
+   font-size: 15px;
+   color: blue;
+}
