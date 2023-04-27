@@ -5,22 +5,29 @@
     padding-top: 8px;
     text-align: right;
     width: 140px;
-    left: 80%;
-    position: relative;
-    top: -85px;
+    right: 0%;
+    position: absolute;
+    top: 0px;
 }
+    header{
+        position:relative;
+    }
+
 .menu-opcoes{
-    position: relative;
-    left: 50%;
-    bottom: 80px;
+    position: absolute;
+    right: 0%;
+    bottom: 0px;
 }
 .menu-opcoes li{
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 .menu-opcoes a {
     color: #003366;
-}
+}header{
+        position:relative;
+    }
+
 body {
     color: #333333;
     font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
@@ -36,6 +43,7 @@ body {
     text-transform: uppercase;
     margin-right: 10px;
     width: 230px;
+    clear: left;
 }
 .busca h2, .busca form, .menu-departamentos h2{
     margin: 10px;
@@ -59,6 +67,78 @@ body {
     float: left;
     margin-top: 10px;
     padding-bottom: 10px;
+}
+.menu-departamentos li ul{
+    display: none;
+}
+
+.menu-departamentos li:hover ul {
+    display: block;
+}
+
+.menu-departamentos ul ul li {
+    background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a::before{
+    content: '-  ';
+}
+h1 + p{
+    text-indent: 0;
+}
+
+p::first-letter{
+    text-transform: capitalize;
+
+}
+
+p::first-line{
+    font-variant: small-caps;
+
+}
+
+
+.sacola {
+    background: url(../img/sacola.png) no-repeat top right;
+
+    font-size: 14px;
+    padding-right: 35px;
+    padding-top: 8px;
+    text-align: right;
+    width: 140px;
+    left: 80%;
+    position: relative;
+    top: -85px;
+}
+
+.menu-opcoes{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+header{
+position: relative;
+}
+
+.menu-opcoes li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+
+.menu-opcoes a {
+    color: #003366;
+
+}
+
+.menu-opcoes a:hover{
+    color: #007dc6;
+
+}
+
+.menu-opcoes a:active{
+    color:red;
 }
 .destaque{
     margin-top: 10px;
