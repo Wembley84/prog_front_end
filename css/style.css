@@ -41,9 +41,9 @@ p{
 
 
 #centro-distribuicao{
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100px;
 }
 
 #rodape {
